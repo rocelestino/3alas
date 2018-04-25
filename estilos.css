@@ -1,0 +1,83 @@
+/* estilos */
+
+:root{
+	
+	--negro: #29272a;
+	--negroVerdadero: #000;
+	--blanco: #FFF;
+	--naranja: #f69c21;
+	
+	
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	}
+
+body{
+	background-color: var( --negro);
+	background-image: url("images/pattern.jpg");
+	font-family: Arial;
+	
+	
+	}
+	
+.cabecera{
+	background-color:red;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right:auto;
+	
+	
+	margin-top: 16px;
+    margin-bottom: 24px;
+	
+}
+	h1{
+		color: var(--naranja);
+		
+		
+	
+}
+
+.contenedor{
+	background-color: var(--blanco);
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	
+
+	
+}
+
+.botonera{ 
+	background-color: var(--naranja);
+	
+}
+
+.botonera-lista{
+	display: flex;
+	list-style: none;
+	max-width: 1000px;
+	
+}
+.botonera a{background-color: gold;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 5px 10px;
+	text-align: center;
+	
+}
+
+
+.botonera a:hover{
+
+}	
