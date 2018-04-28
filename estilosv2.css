@@ -1,0 +1,301 @@
+/* estilos.css */
+
+/* Las variables de CSS se crean en la "raiz" del documento */
+:root{
+	--negro: #29272a;
+	--negroVerdadero: black;
+	--negroClaro: #BBB;
+	--blanco: #FFF;
+	--naranja: #f69c21;
+	--amarillo: yellow;
+}
+
+/* 
+	Primero eliminamos estilos predeterminados y aplicamos 
+	box-sizing: border-box;
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: var(--negro);
+	background-image: url("images/pattern.jpg");
+
+	/* Aplico la fuente general en la etiqueta body para aprovechar la herencia */
+	font-family: Arial, sans-serif;
+}
+
+h2{
+	font-size: 20px;
+	margin-bottom: 16px;
+}
+
+
+
+
+/*
+	------------------
+				SECCION CABECERA
+	------------------
+*/
+.cabecera{
+	display: flex;
+	/* Los separa en horizontal */
+	justify-content: space-between;
+	/* Los centra en vertical*/
+	align-items: center;
+
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 16px;
+	margin-bottom: 24px;
+}
+
+h1{
+	color: var(--naranja);
+}
+
+
+.contenedor{
+	background-color: var(--blanco);
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 6px 6px 0 0;
+	/* border-top-right-radius: ; */
+}
+
+
+/*
+	------------------
+				SECCION BOTONERA
+	------------------
+*/
+.botonera{
+	background-color: var(--naranja);
+	border-radius: 6px 6px 0 0;
+	padding-left: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+/* ul */
+.botonera-lista{
+	list-style-type: none;
+	display: flex;
+}
+.botonera-lista li{
+	flex-grow: 1;
+	
+}
+
+.botonera-lista{
+	
+	margin:
+	
+.botonera a{
+	/* background-color: green; */
+	display: block;
+	border-right: 1px solid var(--amarillo);
+	text-align: center;
+	padding: 6px 0;
+}
+.botonera a:hover{
+	
+}
+
+/* .sin-borde.sin-borde 6 puntos
+
+.clase etiqueta (Significa que etiqueta está dentro de clase)
+
+etiqueta.clase (Significa que etiqueta tiene aplicada .clase) (4)
+ */
+a.sin-borde{
+	border-right: none;
+}
+
+
+
+
+
+/*
+	------------------
+				SECCION SLIDER
+	------------------
+*/
+.slider{
+	text-align: center;
+	margin-top: 30px;
+}
+
+
+
+
+
+/*
+	------------------
+				SECCION CATEGORIAS
+	------------------
+*/
+.categorias{
+	width: 20%;
+	float: left;
+	margin-top: 50px;
+}
+
+.categorias h2{
+	padding-left: 24px;
+}
+
+.categorias-lista{
+	list-style-type: none;
+	padding-left: 35px;
+}
+
+.categorias-lista li{
+	border-bottom: 1px dashed var(--negroClaro);
+}
+
+.categorias-lista a{
+	display: block;
+	padding: 6px 0;
+	
+	text-decoration: none;
+	color: var(--negro);
+}
+.categorias-lista a:hover{
+	font-weight: bold;
+}
+
+
+
+
+
+/*
+	------------------
+				SECCION PRODUCTOS
+	------------------
+*/
+.productos{
+	width: 80%;
+	float: right;
+	margin-top: 50px;
+	
+	padding-right: 56px;
+}
+
+.lampara{
+	width: 50%;
+	float: left;
+
+	padding-left: 26px;
+	padding-bottom: 32px;
+}
+
+.lampara img{
+	float: left;
+}
+
+.lampara p{
+	float: right;
+	width: 50%;
+}
+
+
+
+
+/*
+	------------------
+				SECCION NEWSLETTER
+	------------------
+*/
+.newsletter{
+	border-radius: 5px;
+	clear: both;
+	
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: center;
+	
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	border: 1px solid var(--negroClaro);
+	
+	padding: 10px 24px;
+	
+	/*
+		FIREFOX ARREGLÓ EL BUGGGG :D :D :D 
+	*/
+	background-image: linear-gradient(
+						var(--blanco), 
+						var(--negroClaro)
+					);
+}
+
+
+.newsletter-info{
+	margin-left: 40px;
+}
+.newsletter-info p{
+	margin-left: 40px;
+}
+.newsletter-form{
+	flex-grow: 1;
+
+	display: flex;
+	justify-content: flex-end;
+}
+
+/*
+	Con [] puedo seleccionar por atributo
+*/
+.newsletter-form [type="submit"]{
+	/* Eliminar estilos predeterminados de un botón */
+	background: none;
+	border: none;
+	
+	/* Agregamos el cursor de la manito que perdemos al sacarle el fondo al botón */
+	cursor: pointer;
+	
+	font-weight: bold;
+	padding: 5px 8px;
+}
+.pie-creditos a{
+	font-family: 'Gamja Flower', cursive;
+	
+}
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
